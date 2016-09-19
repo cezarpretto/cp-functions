@@ -13,18 +13,26 @@ str.replaceAll('ar', 'bar');
 bower install cp-functions --save
 ```
 
+then:
+
+```html
+<script src="bower_components/cp-functions/main.js"></script>
+```
+
 **_List of functions until now:_**
 - String.replaceAll();
 - String.ltrim();
 - String.rtrim();
+- Array.likeFilter();
 
 # Examples
 
-String.replaceAll() :
+String.replaceAll(search, replace) :
 
 ```js
 var str = 'Cezar, Colar, Amar';
 str.replaceAll('ar', 'bar');
+//Result: 'Cezbar, Colbar, Ambar'
 ```
 
 String.ltrim() :
@@ -32,6 +40,7 @@ String.ltrim() :
 ```js
 var str = '           Cezar';
 str.ltrim();
+//Result: 'Cezar'
 ```
 
 String.rtrim() :
@@ -39,4 +48,19 @@ String.rtrim() :
 ```js
 var str = 'Cezar              ';
 str.rtrim();
+//Result: 'Cezar'
+```
+
+Array.likeFilter(nodeName, searchTerm) :
+
+```js
+var arr = [
+  {name: 'Cezar'},
+  {name: 'André'},
+  {name: 'Eduardo'},
+  {name: 'Carlos'}
+];
+
+arr.likeFilter('name', 'cez');
+//Result: [{name: 'Cezar'}]
 ```
