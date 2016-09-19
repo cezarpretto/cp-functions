@@ -1,8 +1,8 @@
-#CP FUNCTIONS
+# CP FUNCTIONS
 
-It's a project to create functions that does not are in Javascript language like this:
+It's a project to create functions that are not in Javascript language like this:
 
-``js
+```js
   var str = 'Cezar, Colar, Amar';
   str.replaceAll('ar', 'bar');
-``
+```
