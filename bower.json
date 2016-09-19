@@ -1,0 +1,17 @@
+{
+  "name": "cp-functions",
+  "authors": [
+    "Cezar Vinícius de O. Pretto <cezar@planosassessoria.com.br>"
+  ],
+  "description": "",
+  "main": "main.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
