@@ -27,12 +27,3 @@ clearString = function(str){
   str = str.replace(/[ç]/,"c");
   return str.replace(/[^a-z0-9]/gi,'');
 };
-
-var arr = [
-  {name: 'Cezar'},
-  {name: 'André'},
-  {name: 'Eduardo'},
-  {name: 'Carlos'}
-];
-
-console.log(arr.likeFilter('name', 'cez'));
